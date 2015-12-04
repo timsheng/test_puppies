@@ -1,11 +1,11 @@
 require 'rspec'
-require 'page-obejct'
+require 'page-object'
 require 'data_magic'
 require 'require_all'
 
 require_all 'lib'
 
-Rspec.configure do |config|
+RSpec.configure do |config|
   config.include PageObject::PageFactory
 
   config.before do
